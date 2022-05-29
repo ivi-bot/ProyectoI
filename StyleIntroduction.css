@@ -1,0 +1,33 @@
+:root{
+    --width:475px;
+    --padding:10px;
+    --bgcolor:#8A84E2;
+    --width-collapsed:59px;   
+}
+/*Menú introducción fijado y buen tamaño-->*/
+#back{
+    background-color: var(--bgcolor);
+    float:left;
+    position: fixed;
+    height: 100%;
+    padding:10px;
+    width:330px;
+}   
+
+#back #introduction{
+    background-color: #AFAFDC;
+    float:left;
+    position: fixed;
+    height: 900px;
+    width:280px;
+    top: 32px;
+    bottom: 32px;
+    left: 32px;
+}   
+
+
+#main img{
+    height:100%;
+    width:100%;
+    left: 340px;
+  }
