@@ -18,7 +18,7 @@
                 <div id="name"><h2>Viviana Muñoz Carranza</h2></div>
                 <div id="ocupación"  class="titulos"><h3>Estudiante Ingeniería en Computación, ESPOL</h3></div>
                 <div id="mail"><img src="./assets/bxs-envelope.svg" alt="mail"></div>
-                <div id="mail_btn"><button name="button">Mail</button></div>
+                <div id="mail_btn"><button name="button" href="#Forms">Mail</button></div>
                 <div id="follow_btn"><button name="button">Follow</button></div>
                 <div id="tags"  class="titulos"><h3>TAGS</h3></div>
                 <div id="#_btn" class="stylehashtag">
@@ -31,10 +31,9 @@
                     <button name="button">voluntariado</button>
                 </div>
                 <div id="tags" class="titulos"><h3>Empieza a navegar</h3></div>
-                <div id="Inicio"><a href="#titulo">Inicio</a></div>
-                <div id="Proyectos"><a href="#tituloProyectos">Proyectos</a></div>
-                <div id="Recomendaciones"><a href="#tituloRecomendaciones">Recomendaciones</a></div>
-
+                <div class="TítulosPágina"><a href="#titulo">Inicio</a></div>
+                <div class="TítulosPágina"><a href="#titulo">Proyectos</a></div>
+                <div class="TítulosPágina"><a href="#titulo">Recomendaciones</a></div>
                 <div id="tags"><h3>More</h3></div>
                 <div id="facebook"><img src="./assets/bxl-facebook-square.svg" alt="go to Facebook"></div>
                 <div id="linkendin"><img src="./assets/bxl-linkedin-square.svg" alt="go to Linkedin"></div>
@@ -42,16 +41,132 @@
             </div>
         </div>
     </div>
-    
+  
+  <!--
+    <picture id="fondo"><img src="./assets/fondo.jpg" alt="Fondo Laptop" style="float: right "></picture>   
+  -->
     <div id="main">
-        <div id="fondo"><img src="./assets/fondo.jpg" alt="Fondo Laptop" style="float: right "></div>
-        <div id="texto" style="float: right">
-            <h1 id="titulo" alt="hola">¡Hola!</h1>
-            <p>Las decisiones xdddd</p>
-            <h2 id="tituloProyectos" alt="Proyectos">Proyectos</h2>
-            <h2 id="tituloRecomendaciones" alt="Proyectos">Recomendaciones</h2>
-        </div>
         
+        <div id="páginaUNO" style="float: right">
+            <h1 id="titulo" alt="hola">¡Hola!</h1>
+            <p>Las decisiones que has tomado hasta ahora te 
+            han llevado a este sitio querido visitante, 
+            disfruta navegando en los enlaces a tu costado izquierdo 
+            o si buscas algo en específico en la parte de abajo.</p>
+            <h2 id="tituloRecomendaciones" alt="Proyectos">Recomendaciones</h2>
+            <div id="tablaIdiomas">
+                <table class="Idiomas">
+                    <tr>
+                        <th></th>
+                        <th>Español</th>
+                        <th>Inglés</th>
+                        <th>Coreano</th>
+                    <tr>
+                      <td>Celda 1</td>
+                      <td>Celda 2</td>
+                      <td>Celda 3</td>
+                      <td>Celda 3</td>
+                    </tr>
+                    <tr>
+                      <td>Celda 4</td>
+                      <td>Celda 5</td>
+                      <td>Celda 6</td>
+                      <td>Celda 3</td>
+                    </tr>  
+                  </table>
+            </div>
+            <div id="Informacion-enlaces" class="generalText">
+                <h3>Información general:</h3>
+                <ul>
+                    <li>Proyectos
+                        <ul>
+                            <li><a href="#Robótica">Robótica</a></li>
+                            <li>java</li>
+                            <li>voluntariado</li>
+                            <li>Otros</li>
+                        </ul>
+                    </li>
+                    <li>Explora
+                        <ul>
+                            <li>Oficina</li>
+                            <li>Tiendas recomendadas</li>
+                            <li>Descubre</li>
+                        </ul>
+                    </li>
+                    </li>
+                  </ul> 
+            </div>
+            <div id="páginaProyectos">
+                <div><h3 alt="Proyectos">Proyectos</div></h3></div>
+                <!--Línea debajo de título-->
+                <div id="EstructuraBloques">
+                    <div class="boxOut">
+                        <div class="boxIN">
+                            <div class="iconBOX"><img src="./assets/bxs-bot.svg" alt="robot"></div>
+                        </div>
+                    </div>
+                    <div class="boxOut">
+                        <div class="boxIN">
+                            <div class="iconBOX"><img src="./assets/bxl-java.svg" alt="javaProyects"></div>
+                        </div>
+                    </div>
+                    <div class="boxOut">
+                        <div class="boxIN">
+                            <div class="iconBOX"><img src="./assets/bx-heart.svg" alt="volunntariado"></div>
+                        </div>
+                    </div>
+                    <div class="boxOut">
+                        <div class="boxIN">
+                            <div class="iconBOX"><img src="./assets/bx-loader-alt.svg" alt="More"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="InfoDetailProjects">
+                <div id="Robótica"><h2>Robótica</h2>
+                <!--
+               <video width="320" height="240" controls>
+                   <source src="movie.mp4" type="video/mp4">
+                   <source src="movie.ogg" type="video/ogg">
+                 Your browser does not support the video tag.
+               </video>
+               -->
+               <div class="generalText">
+                   <h3>Descripción del curso</h3>
+                   <h2>Enlace curso</h2>
+                   <h2>Enlace certificado</h2>
+                   <h2>Consejos</h2>
+   
+                   <!-- GENERAR ENLACES-->
+   
+               </div>
+            </div>
+
+
+           </div>
+
+           <div id="páginaMapa">
+               <div class="TítulosPágina"><h2>Recomendaciones</h2></div>
+              <!-- MAPAS-->
+              <div id="btnmAPA" class="styleBtnMapa">
+                <button name="button">Oficina</button>
+                <button name="button">Tiendas</button>
+                <button name="button">Descubre</button>
+            </div> 
+           </div>
+
+           <div id="Forms">
+            <div class="TítulosPágina"><h2>Comunícate conmigo</h2></div>
+            <h3 class="Título#">Nombre</h3>
+            <h3 class="Título#">Correo</h3>
+            <h3 class="Título#">Motivo</h3>
+            <h3 class="Título#">Descripción</h3>
+            <button name="button">Enviar</button>
+           </div>
+            
+        </div> 
+    </div>      
     </div>
     
 
@@ -61,6 +176,7 @@
 
 <!-- No podrá ver este texto. 
 TOKEN: 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
-
+https://htmlcheatsheet.com/
+https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-column-row-gap
 
 -->
