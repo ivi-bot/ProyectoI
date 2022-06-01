@@ -26,8 +26,9 @@
 } 
 
 /* CON SELECTOR por elemento y por clase*/
-div .stylehashtag :hover{
-    box-shadow: #AFAFDC;
+.button:hover{
+    background-color: #AFAFDC;
+    background-blend-mode: lighten;
 }
 
 /*este no me funciona:(   rem:tamaño de  letra del elemento raíz*/
@@ -57,6 +58,11 @@ div .titulos{
 /*Menú introducción fijado y buen tamaño-->*/
   
 
+
+#titulo:hover{
+    text-decoration: underline;
+
+}
 #back #introduction{
     background-color: #AFAFDC;
     float:left;
@@ -118,3 +124,13 @@ div .titulos{
 #back #introduction #InteractionProfile{
     height: 100%;
 }
+
+/*
+nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+  }
+
+*/
