@@ -6,172 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <!-- Se puede incluir el link aquí antes de los stylesheet -->
-    <link rel="stylesheet" href="/stylesheets/StyleIntroduction.css">
-    <link rel="stylesheet" href="/stylesheets/main.css">
+ <!--   <link rel="stylesheet" href="/stylesheets/StyleIntroduction.css">
+    <link rel="stylesheet" href="/stylesheets/main.css"> -->
 
 </head>
 <body>
-    <div id="back" class="menuBack">
-        <div id="introduction" class="menu_introduction">
-            <nav id="InteractionProfile">
-                <div id="foto"><img src="./assets/bxs-circle.svg" alt="fotoPerfil"></div>
-                <div id="name" class="Títulos h2"><h2>Viviana Muñoz Carranza</h2></div>
-                <div id="ocupación"  class="Títulos h3"><h3>Estudiante Ingeniería en Computación, ESPOL</h3></div>
-                <div id="mail"><img src="./assets/bxs-envelope.svg" alt="mail"></div>
-                <div id="mail_btn"><button class="button" href="#Forms">Mail</button></div>
-                <div id="follow_btn"><button name="button">Follow</button></div>
-                <div id="tags"  class="Títulos h2"><h3>TAGS</h3></div>
-                <div id="#_btn">
-                    <button class="button" alt="python">python</button>
-                    <button class="button" art="java">java</button>
-                    <button class="button" alt="redes">redes</button>
-                    <button class="button" alt="edición de videos">edicióndevídeo</button>
-                    <button class="button" alt="gatos">gatos</button>
-                    <button class="button" alt="coursera">coursera</button>
-                    <button class="button" alt="voluntariado">voluntariado</button>
-                </div>
-                <div id="tags" class="Títulos h3"><h3>Empieza a navegar</h3></div>
-                <div class="enlacesIntroduction" alt="Ir a inicio"><a href="#titulo">Inicio</a></div>
-                <div class="enlacesIntroduction" alt="Ir a proyectos"><a href="#páginaProyectos">Proyectos</a></div>
-                <div class="enlacesIntroduction" alt="Ir a mapa"><a href="#páginaMapa">Recomendaciones</a></div>
-                <div id="tags" class="Títulos h3"><h3>More</h3></div>
-                <!--Me falta redirigir los iconos de las redes sociales-->
-                <div  id="iconsRedes">
-                    <div id="facebook"><img src="./assets/bxl-facebook-square.svg" alt="go to Facebook"></div>
-                    <div id="linkendin"><img src="./assets/bxl-linkedin-square.svg" alt="go to Linkedin"></div>
-                    <div id="git"><img src="./assets/bxl-github.svg" alt="go to github"></div>
-                </div>
+    <div id="backIntroduction" class="menuBack">
+        <nav id="introduction" class="menu_introduction">
+            <img src="./assets/bxs-circle.svg" alt="fotoPerfil" id="foto">
+            <h2 id="name" class="Títulos h2" alt="Viviana Muñoz Carranza">Viviana Muñoz Carranza</h2>
+            <h3 id="ocupación"  class="Títulos h3" alt="Estudiante Ingeniería en Computación, ESPOL">Estudiante Ingeniería en Computación, ESPOL</h3>
+            <button id="mail_btn" class="button" alt="Mail" href="#Forms">
+                <img src="./assets/bxs-envelope.svg" id="Iconmail">Mail
+            </button>
+            <button id="follow_btn" class="button">Follow</button>
+            <h3 id="tags"  class="Títulos h2" alt="Tags">TAGS</h3>
+            <div id="#_etiquetas">
+                <button class="etiqueta" alt="python">python</button>
+                <button class="etiqueta" art="java">java</button>
+                <button class="etiqueta" alt="redes">redes</button>
+                <button class="etiqueta" alt="edición de videos">edicióndevídeo</button>
+                <button class="etiqueta" alt="gatos">gatos</button>
+                <button class="etiqueta" alt="coursera">coursera</button>
+                <button class="etiqueta" alt="voluntariado">voluntariado</button>
             </div>
-        </div>
+            <h3 id="Comienzo" class="Títulos h3" alt="Empieza a navegar">Empieza a navegar</h3>
+            <a class="enlacesIntroduction" alt="Ir a inicio" href="#titulo">Inicio</a>
+            <a class="enlacesIntroduction" alt="Ir a proyectos" href="#páginaProyectos">Proyectos</a>
+            <a class="enlacesIntroduction" alt="Ir a mapa" href="#páginaMapa">Recomendaciones</a>
+            <h3 id="more" class="Títulos h3" alt="Redes sociales">Más</h3>
+            <!--Me falta redirigir los iconos de las redes sociales-->
+            <div id="iconsRedes">
+                <a href="https://www.facebook.com/groups/411710228901642/" target="_blank">
+                    <img id="facebook" src="./assets/bxl-facebook-square.svg" alt="go to Facebook">
+                </a>    
+                <a href="https://www.linkedin.com/in/viviana-stephania-mu%C3%B1oz-carranza-2a0839238" target="_blank">
+                    <img id="linkendin" src="./assets/bxl-linkedin-square.svg" alt="go to Linkedin">
+                </a>
+                <a href="https://github.com/ivi-bot/ProyectoI" target="_blank">
+                    <img id="git" src="./assets/bxl-github.svg" alt="go to github">
+                </a>
+            </div>
+        </nav>
     </div>
   
   <!--
     <picture id="fondo"><img src="./assets/fondo.jpg" alt="Fondo Laptop" style="float: right "></picture>   
   -->
     <div id="main">
-        
-        <div id="páginaUNO" style="float: right">
+        <div id="páginaUNO">
             <h1 id="titulo" alt="hola">¡Hola!</h1>
-            <p>Las decisiones que has tomado hasta ahora te 
+            <p class="simpleText">Las decisiones que has tomado hasta ahora te 
             han llevado a este sitio querido visitante, 
             disfruta navegando en los enlaces a tu costado izquierdo 
             o si buscas algo en específico en la parte de abajo.</p>
-            <h2 id="tituloRecomendaciones" alt="Proyectos" class="Títulos h2" >Recomendaciones</h2>
             <div id="tablaIdiomas">
-                <table class="Idiomas">
+                <table class="Idiomas" class="simpleText">
                     <tr>
                         <th></th>
                         <th>Español</th>
                         <th>Inglés</th>
                         <th>Coreano</th>
                     <tr>
-                      <td>Celda 1</td>
-                      <td>Celda 2</td>
-                      <td>Celda 3</td>
-                      <td>Celda 3</td>
+                      <td class="tittleSimpleText">Comprender</td>
+                      <td>Avanzado</td>
+                      <td>Intermedio alto</td>
+                      <td>Básico</td>
                     </tr>
                     <tr>
-                      <td>Celda 4</td>
-                      <td>Celda 5</td>
-                      <td>Celda 6</td>
-                      <td>Celda 3</td>
+                      <td class="tittleSimpleText">Hablar</td>
+                      <td>Avanzado</td>
+                      <td>Intermedio</td>
+                      <td>Básico</td>
                     </tr>  
+                    <tr>
+                        <td class="tittleSimpleText">Escribir</td>
+                        <td>Avanzado</td>
+                        <td>Intermedio</td>
+                        <td>Básico</td>
+                      </tr>  
                   </table>
             </div>
             <div id="Informacion-enlaces" class="generalText">
-                <h3 class="Títulos h3">Información general:</h3>
-                <ul>
+                <h3 class="Títulos h3" alt="Información general">Información general:</h3>
+                <ul class="simpleText">
                     <li>Proyectos
                         <ul>
                             <li><a href="#Robótica">Robótica</a></li>
-                            <li>java</li>
-                            <li>voluntariado</li>
-                            <li>Otros</li>
+                            <li class="TextMessagesoon">Java</li>
+                            <li class="TextMessagesoon">Voluntariado</li>
+                            <li class="TextMessagesoon">Otros</li>
                         </ul>
                     </li>
                     <li>Explora
                         <ul>
-                            <li>Oficina</li>
-                            <li>Tiendas recomendadas</li>
-                            <li>Descubre</li>
+                            <li><a href="#páginaMapa">Oficina</a></li>
+                            <li class="TextMessagesoon">Tiendas recomendadas</li>
+                            <li class="TextMessagesoon">Descubre</li>
                         </ul>
                     </li>
-                    </li>
-                  </ul> 
+                </ul> 
             </div>
-            <div id="páginaProyectos">
-                <div><h3 alt="Proyectos" class="Títulos h3">Proyectos</div></h3></div>
-                <!--Línea debajo de título-->
+        </div>
+
+        <div id="páginaProyectos">
+            <h3 alt="Proyectos" class="Títulos h3">Proyectos</h3>
+                <!--Línea debajo de título posiblemente css-->
                 <div id="EstructuraBloques">
                     <div class="boxOut">
                         <div class="boxIN">
-                            <div class="iconBOX"><img src="./assets/bxs-bot.svg" alt="robot"></div>
+                            <a alt="Ir a Robótica" href="#Robótica">
+                                <img class="iconBOX" src="./assets/bxs-bot.svg" alt="robot">
+                            </a>
                         </div>
                     </div>
                     <div class="boxOut">
                         <div class="boxIN">
-                            <div class="iconBOX"><img src="./assets/bxl-java.svg" alt="javaProyects"></div>
+                            <img class="iconBOX" src="./assets/bxl-java.svg" alt="javaProyects">
                         </div>
                     </div>
-                    <div class="boxOut">
+                    <div class="boxOut" class="TextMessagesoon">
                         <div class="boxIN">
-                            <div class="iconBOX"><img src="./assets/bx-heart.svg" alt="volunntariado"></div>
+                            <img class="iconBOX" src="./assets/bx-heart.svg" alt="volunntariado">
                         </div>
                     </div>
-                    <div class="boxOut">
+                    <div class="boxOut" class="TextMessagesoon">
                         <div class="boxIN">
-                            <div class="iconBOX"><img src="./assets/bx-loader-alt.svg" alt="More"></div>
+                            <img class="iconBOX" src="./assets/bx-loader-alt.svg" alt="More">
                         </div>
                     </div>
                 </div>
+        </div>
+
+        <div id="InfoDetailProjects">
+            <h2 id="Robótica" class="Títulos h2" alt="Robótica">Robótica</h2>
+            <div class="colorBack">
+                <video width="320" height="240" controls>
+                    <source src="./assets/Mi primer robot VIDEO_Trim.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>   
+            <div class="generalText">
+                <h3 class="Títulos h3" alt="Descripción del curso">Descripción del curso</h3>
+                <p>El vídeo que acabas de ver es una parte de lo que hace el circuito.
+                    Curso ofrecido por la plataforma Coursera y la Universidad Nacional Autónoma de México.
+                    En este curso podrás poner en práctica lo aprendido de electrónica, interactuar con elementos
+                    básicos como una pila o un led. Desarrollaras un helicóptero con ayuda de programación básica en 
+                    Rompi. Mi motivación a realizarlo fue por motivos de pandemia, todos los elementos integrados y eléctricos
+                    los vi de manera virtual y quería tener una vista cercana a la realidad, así que si estás 
+                    en busca de lo mismo te lo recomiendo.
+                </p>
+                <a href="https://www.coursera.org/learn/robotica-inicial" target="_blank" alt="enlace Curso">Enlace curso</a>
+                <a href="https://coursera.org/share/3caf7ce055888ca8d1d22abb116bad9b" target="_blank" alt="Enlace certificado">Enlace certificado</a>
+                <h3 class="Títulos h3" alt="Consejos">Consejos</h3>   
+                <li>Tiempo disponible, tendrás que cortar muchos cables, o en su defecto si tienes 'cable macho/macho' se te facilitará mucho el trabajo.</li>
+                <li>Ciertas indicaciones en los vídeos no son detalladas, te recomiendo que busques en la web el diagrama de conexión.</li>
+                <li>Algunos elementos integrados son díficiles de encontrar, por ello busca lugares confiables para que obtengas materiales de calidad.</li>
             </div>
-
-            <div id="InfoDetailProjects">
-                <div id="Robótica" class="Títulos h2"><h2>Robótica</h2>
-                <!--
-               <video width="320" height="240" controls>
-                   <source src="movie.mp4" type="video/mp4">
-                   <source src="movie.ogg" type="video/ogg">
-                 Your browser does not support the video tag.
-               </video>
-               -->
-               <div class="generalText">
-                   <h3>Descripción del curso</h3>
-                   <h2>Enlace curso</h2>
-                   <h2>Enlace certificado</h2>
-                   <h2>Consejos</h2>
-   
-                   <!-- GENERAR ENLACES-->
-   
-               </div>
+        </div>
+        <div id="páginaMapa">
+            <h2 id="tituloRecomendaciones" alt="Proyectos" class="Títulos h2" >Recomendaciones</h2>
+            <div class="colorBack">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.023533359241!2d-79.9676545!3d-2.1446714999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1654456165733!5m2!1ses!2sec" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-
-           </div>
-
-           <div id="páginaMapa">
-               <div class="TítulosPágina"><h2>Recomendaciones</h2></div>
-              <!-- MAPAS-->
-              <div id="btnmAPA" class="styleBtnMapa">
+            <div id="btnmAPA" class="styleBt nMapa">
                 <button name="button">Oficina</button>
                 <button name="button">Tiendas</button>
                 <button name="button">Descubre</button>
             </div> 
-           </div>
-
-           <div id="Forms">
-            <div class="TítulosPágina"><h2>Comunícate conmigo</h2></div>
-            <h3 class="Título#">Nombre</h3>
-            <h3 class="Título#">Correo</h3>
-            <h3 class="Título#">Motivo</h3>
-            <h3 class="Título#">Descripción</h3>
-            <button name="button">Enviar</button>
-           </div>
-            <!--CAMBIAR CURSOR Y COLOR AL PASAR ENCIMA, HOVER-->
+        </div>
+        <div id="Forms">
+            <h2 alt="Comunícate conmigo" class="Títulos h2">Comunícate conmigo</h2>
+            <div id="boxForm">
+                <form action="/action_page.php">
+                    <label for="fname">Nombre</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Correo</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="lname">Motivo</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="lname">Descripción</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Enviar">
+                  </form> 
+            </div>
         </div> 
     </div>          
-
-    
 </body>
 </html>
 
