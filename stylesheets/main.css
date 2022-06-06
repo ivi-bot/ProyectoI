@@ -4,10 +4,6 @@
   box-sizing: border-box;
   }
 
-
-
-
-
 /* Esta hoja de estilos define la estructura grid, colores 
 y tipo de ltra general*/
 
@@ -22,6 +18,7 @@ body{
     grid-template-rows: 0.1fr 0.1fr 3.8fr 0.1fr 0.1fr; 
     gap: 0px 0px; 
   }
+
 
 
 #backIntroduction{
@@ -48,3 +45,11 @@ body{
     align-self: initial;
 }
 
+
+
+/*LO RECOMIENDA PERO SALE FEO:C
+img,video{
+  width: 100%;
+  height: auto;
+}
+*/

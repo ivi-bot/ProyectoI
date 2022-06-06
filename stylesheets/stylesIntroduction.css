@@ -3,7 +3,8 @@
 #foto{
     margin:0px auto;
     text-align:center;
-    width: 186px;
+    align-self: start;
+    width: 260px;
     height: 195px;
     padding: 35px 75px;
     align-items: center;
