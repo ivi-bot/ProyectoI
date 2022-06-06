@@ -1,0 +1,76 @@
+h1{
+    text-decoration: underline;
+}
+
+#EstructuraBloques{
+    display: grid; 
+    grid-template-columns: 0.3fr 1.7fr 1.6fr 0.2fr 1.2fr 1.7fr 0.3fr; 
+    grid-template-rows: 0.3fr 1.7fr 1.3fr 0.2fr 1.5fr 1.7fr 0.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". . . . . . ."
+    ". boxOut1 boxOut1 . boxOut2 boxOut2 ."
+    ". boxOut1 boxOut1 . boxOut2 boxOut2 ."
+    ". . . . . . ."
+    ". boxOut3 boxOut3 . boxOut4 boxOut4 ."
+    ". boxOut3 boxOut3 . boxOut4 boxOut4 ."
+    ". . . . . . .";     
+}
+
+#boxOut1 { grid-area: boxOut1; }
+#boxOut2 { grid-area: boxOut2; }
+#boxOut3 { grid-area: boxOut3; }
+#boxOut4 { grid-area: boxOut4; }
+.boxOut{
+    justify-content: center;
+    align-items: center;
+}
+.boxIN{
+    background-color: #B7D3F2;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.boxIN img{
+    width: 30%;
+    height: auto;
+    padding: 10%;
+}
+.colorBack{
+    background-color: #84AFE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 325px;
+}
+
+#main{
+    background: url('/assets/fondo.jpg') no-repeat;
+}
+
+#contentMain{
+    padding: 8%;
+    border-radius: 10px;
+
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+    /* To control the blur of the glass */
+    backdrop-filter: blur( 15px );
+  
+    /* A slight border (not necessary)  */
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+body{
+    background-color:#040116;
+}
+
+table{
+    border: #AFAFDC 5px solid;
+    border-collapse: separate;
+}
+
+/*Casi terminado, siguen faltando detalles de ajuste de pantalla(mapa,video) ---- Diseño responsivo. ,
+ justificar texto, como ajusto también el menú¿?
+ Esquinas redondeadas
+Sombras*/

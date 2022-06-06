@@ -1,3 +1,40 @@
+/* Esta hoja de estilos define la estructura grid, colores 
+y tipo de ltra general*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+body{
+    display: grid;
+    grid-template-columns: 0.1fr 1.6fr 0.1fr 0.2fr 4.8fr 0.1fr; 
+    grid-template-rows: 0.1fr 0.1fr 3.8fr 0.1fr 0.1fr; 
+    gap: 0px 0px; 
+  }
 
 
+#backIntroduction{
+    grid-area: 2 / 1 / 5 / 4;
+    background-color: #8A84E2;
+    justify-self: initial;
+    align-self: initial;
+}
+
+#introduction{
+    grid-area: 3 / 2 / 4 / 3; 
+    justify-self: initial;
+    align-self: initial;
+    background-color: #AFAFDC;
+    margin: auto;
+    position: static;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main{
+    grid-area: 3 / 5 / 4 / 6;
+    justify-self: initial;
+    align-self: initial;
+}
 

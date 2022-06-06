@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Joan&family=Noto+Sans:wght@600&family=Playfair+Display+SC&family=Slabo+27px&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+
+#foto{
+    margin:0px auto;
+    text-align:center;
+    width: 186px;
+    height: 195px;
+    padding: 35px 75px;
+    align-items: center;
+}
+
+
+#titulo{
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+.Títulosh2{
+  font-family: 'Joan', serif;
+  color: white;
+}
+.Títulosh3{
+    font-family: 'Slabo 27px', serif;
+    color: white;
+
+}
+.simpleText{
+    font-family: 'Fresca', sans-serif;
+    color: beige;
+
+}
+.enlacesIntroduction{
+    font-family: 'Fresca', sans-serif;
+}
+p{
+    font-family: 'Tiro Devanagari Hindi', serif;
+    color: beige;
+}
+button{
+    font-family: 'Playfair Display SC', serif;  
+    margin: auto;
+    left: 132px;
+    top: 428px;
+    border: 10rm;
+    border:#AFAFDC ;
+    word-spacing: 3rm;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+button:hover{
+    background-color: #B7D3F2;
+    border: transparent;
+}
+
+#mail_btn:hover{
+    cursor: pointer;
+}
+#btnEnviar:hover{
+    cursor: pointer;
+}
