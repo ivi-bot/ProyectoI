@@ -2,14 +2,18 @@
   /* Smartphones (portrait) ----------- no me sale TT*/
   @media only screen and (max-width: 320px) {
     /* Styles */
+
     body{
-      display: grid;
-      grid-template-columns: 1.6fr; 
+      grid-template-columns: 320px;
+      grid-template-areas: 
+      "introduction"
+      "main";
     }
-    #introduction
-    {
-      background-color: #8A84E2;
-    }
+    #backIntroduction { grid-area: introduction; }
+    #introduction{ grid-area: introduction; }
+    #main { grid-area: main; }
+
+
   }
 
 
