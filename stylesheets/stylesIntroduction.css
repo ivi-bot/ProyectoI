@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Joan&family=Noto+Sans:wght@600&family=Playfair+Display+SC&family=Slabo+27px&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+/*Esta hoja de estilos le da el diseño a todo el contenedor lateral de la página, #backIntroduction
+ e #Introduction */
 
 #foto{
     margin:0px auto;
@@ -10,34 +11,7 @@
     align-items: center;
 }
 
-
-#titulo{
-    font-family: 'Noto Sans', sans-serif;
-    color: white;
-}
-.Títulosh2{
-  font-family: 'Joan', serif;
-  color: white;
-}
-.Títulosh3{
-    font-family: 'Slabo 27px', serif;
-    color: white;
-
-}
-.simpleText{
-    font-family: 'Fresca', sans-serif;
-    color: beige;
-
-}
-.enlacesIntroduction{
-    font-family: 'Fresca', sans-serif;
-}
-p{
-    font-family: 'Tiro Devanagari Hindi', serif;
-    color: beige;
-}
 button{
-    font-family: 'Playfair Display SC', serif;  
     margin: auto;
     left: 132px;
     top: 428px;

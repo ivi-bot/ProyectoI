@@ -1,11 +1,11 @@
+/* Esta hoja de estilos define la estructura grid, colores, de los contenedores y tipo de letra*/
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Joan&family=Noto+Sans:wght@600&family=Playfair+Display+SC&family=Slabo+27px&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+
 * , *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   }
-
-/* Esta hoja de estilos define la estructura grid, colores 
-y tipo de ltra general*/
 
 html, body {
     height: 100%;
@@ -18,8 +18,6 @@ body{
     grid-template-rows: 0.1fr 0.1fr 3.8fr 0.1fr 0.1fr; 
     gap: 0px 0px; 
   }
-
-
 
 #backIntroduction{
     grid-area: 2 / 1 / 5 / 4;
@@ -44,6 +42,39 @@ body{
     justify-self: initial;
     align-self: initial;
 }
+
+/*Fuente*/
+
+#titulo{
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+}
+.Títulosh2{
+font-family: 'Joan', serif;
+color: white;
+}
+.Títulosh3{
+  font-family: 'Slabo 27px', serif;
+  color: white;
+
+}
+.simpleText{
+  font-family: 'Fresca', sans-serif;
+  color: beige;
+
+}
+.enlacesIntroduction{
+  font-family: 'Fresca', sans-serif;
+}
+p{
+  font-family: 'Tiro Devanagari Hindi', serif;
+  color: beige;
+}
+button{
+  font-family: 'Playfair Display SC', serif;  
+}
+
+
 
 
 
