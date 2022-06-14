@@ -66,15 +66,38 @@ color: white;
 .enlacesIntroduction{
   font-family: 'Fresca', sans-serif;
 }
-p{
+p,li{
   font-family: 'Tiro Devanagari Hindi', serif;
   color: beige;
+  text-align: justify;
 }
 button{
   font-family: 'Playfair Display SC', serif;  
 }
 
+#firstImage{
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+.p{
+  margin: auto;
+  width: 100%;
+}
 
+.primerTexto {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imagen imagen . parrafo parrafo parrafo"
+    "imagen imagen . parrafo parrafo parrafo";
+}
+
+.flex { grid-area: imagen; }
+
+.p { grid-area: parrafo; }
 
 
 

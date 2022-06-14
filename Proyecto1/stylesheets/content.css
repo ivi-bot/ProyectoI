@@ -76,7 +76,21 @@ body{
 
 table{
     border: #AFAFDC 5px solid;
-    border-collapse: separate;
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+    height: 200px;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #AFAFDC ;
+}
+ 
+th,
+td {
+    padding: 5px;
 }
 
 /*Casi terminado, siguen faltando detalles de ajuste de pantalla(mapa,video) ---- Diseño responsivo. ,
