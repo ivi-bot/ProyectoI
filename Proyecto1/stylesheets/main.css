@@ -24,6 +24,7 @@ body{
     background-color: #8A84E2;
     justify-self: initial;
     align-self: initial;
+    border-radius: 5px;
 }
 
 #introduction{
@@ -35,6 +36,8 @@ body{
     position: static;
     text-align: center;
     vertical-align: middle;
+    border-radius: 5px;
+
 }
 
 #main{
@@ -98,12 +101,3 @@ button{
 .flex { grid-area: imagen; }
 
 .p { grid-area: parrafo; }
-
-
-
-/*LO RECOMIENDA PERO SALE FEO:C
-img,video{
-  width: 100%;
-  height: auto;
-}
-*/

@@ -4,9 +4,6 @@
     box-sizing: border-box;
     }
  
-/*repite, pero nno se pq lo puse*/
-
-
 h1{
     text-decoration: underline;
 }
@@ -39,11 +36,27 @@ h1{
     overflow: hidden;
     height: 100%;
     width: 100%;
+    border-radius: 5px;
 }
 .boxIN img{
-    width: 30%;
+    width: 50%;
     height: auto;
     padding: 10%;
+
+}
+.boxIN{
+    text-align: center;
+}
+
+.boxIN:hover{
+    box-shadow: 0px 0px 30px 6px #8A84E2 inset;
+}
+
+h4{
+    visibility: hidden;
+}
+.boxIN:hover h4{
+    visibility: visible;
 }
 .colorBack{
     background-color: #84AFE6;
@@ -51,8 +64,11 @@ h1{
     justify-content: center;
     align-items: center;
     height: 325px;
+    border-radius: 5px;
+
 }
 
+/*Referencia: https://twitter.com/Amit_T18/status/1532376698225836032?t=YBl-z9yItKrTB4kJsa9v0A&s=09*/
 #main{
     background: url('/assets/fondo.jpg') no-repeat;
 }
@@ -69,7 +85,7 @@ h1{
     /* A slight border (not necessary)  */
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-
+/*-------------------------------------------------------------------*/
 body{
     background-color:#040116;
 }
@@ -78,22 +94,52 @@ table{
     border: #AFAFDC 5px solid;
     border-collapse: collapse;
     margin: auto;
-    width: 80%;
+    width: 100%;
     height: 200px;
     text-align: center;
-}
+    table-layout:fixed;
 
+}
+#tablaIdiomas{
+    overflow: hidden;
+}
 th,
 td {
     border: 1px solid #AFAFDC ;
+    padding: 5px;
+    overflow: hidden;
+
 }
  
-th,
-td {
-    padding: 5px;
+video{
+    width: 80%;
+    height:80%;
+}
+#contenedorVideo{
+    text-align: center;
 }
 
-/*Casi terminado, siguen faltando detalles de ajuste de pantalla(mapa,video) ---- Diseño responsivo. ,
- justificar texto, como ajusto también el menú¿?
- Esquinas redondeadas
-Sombras*/
+iframe{
+    height: 90%;
+    width: 90%;
+}
+
+#contenedorMapa{
+    height: 400px;
+}
+
+#btnmAPA, #iconsRedes{
+    display: flex;
+    justify-content: space-around;
+}
+
+input{
+    width: 100%;
+}
+
+#descripcionLabel{
+    height: 325px;
+}
+#Iconmail{
+    height: 12px;
+}
