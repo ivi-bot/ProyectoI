@@ -17,14 +17,11 @@ Sitio web abierto en un computador:
 ![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen2WS.png)
 ![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen3ws.png)
 ![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen4WS.png)
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen5WS.png)
 ![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen6WS.png)  
 
 Sitio web abierto en un computador que solo ocupa la mitad de la pantalla:  
 
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen1MWS.png)
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen2MWS.png)  
-
+![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen1MWS.png)  
 
 
 Comportamiento del sitio web abierto en dispositivos más pequeños que 320px de ancho:  
