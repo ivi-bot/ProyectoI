@@ -34,10 +34,13 @@ body{
     align-self: initial;
     background-color: #AFAFDC;
     margin: auto;
-    position: static;
+
+    
+
     text-align: center;
     vertical-align: middle;
     border-radius: 5px;
+    box-shadow: 3px 5px 36px 5px rgba(183,211,242,1);
 
 }
 
@@ -84,6 +87,7 @@ button{
   height: 100%;
   width: 100%;
 }
+
 .p{
   margin: auto;
   width: 100%;

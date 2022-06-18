@@ -5,8 +5,8 @@
     margin:0px auto;
     text-align:center;
     align-self: start;
-    width: 260px;
-    height: 195px;
+    width: 300px;
+    height: 260px;
     padding: 35px 75px;
     align-items: center;
 }
@@ -18,8 +18,9 @@ button{
     border: 10rm;
     border:#AFAFDC ;
     word-spacing: 3rm;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    height:2rem;
 }
 
 button:hover{

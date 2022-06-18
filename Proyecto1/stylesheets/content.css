@@ -59,6 +59,8 @@ h4{
     align-items: center;
     height: 325px;
     border-radius: 5px;
+    box-shadow: 3px 5px 20px 5px rgba(183,211,242,1);
+
 
 }
 
@@ -113,6 +115,18 @@ video{
     text-align: center;
 }
 
+#secondImage{
+    margin: auto;
+    height: 60%;
+    width: 60%;
+    box-shadow: 3px 5px 36px 5px rgba(183,211,242,1);
+
+  }
+#contenedorImagen{
+    text-align: center;
+  }
+
+
 iframe{
     height: 90%;
     width: 90%;
@@ -122,7 +136,7 @@ iframe{
     height: 400px;
 }
 
-#btnmAPA, #iconsRedes{
+#btnmAPA, #iconsRedes, #textoEnlace{
     display: flex;
     justify-content: space-around;
 }
@@ -136,4 +150,19 @@ input{
 }
 #Iconmail{
     height: 12px;
+}
+.botonFinal{
+    
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.botonFinal:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
+#iconsRedes{
+    height: 3rem;
 }
