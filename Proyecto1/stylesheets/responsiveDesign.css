@@ -4,11 +4,11 @@
   box-sizing: border-box;
   }
 
-@media only screen and (max-width: 320px ) and (max-device-width: 480px) {
+@media only screen and (max-width: 375px ){
     /* Styles */
 
     body{
-      grid-template-columns: 320px;
+      grid-template-columns: 375px;
       grid-template-areas: 
       "introduction"
       "main";
