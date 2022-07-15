@@ -7,7 +7,7 @@ let cargarDatos=() => {
     for(let anime of arreglo){
         id=anime.mal_id;
         nombre=anime.title;
-        let plantilla = `<option value="${id}">${nombre}</option>`;
+        let plantilla = `<option class="underTheEarth" value="${id}">${nombre}</option>`;
         document.querySelector('div.input-group > select').innerHTML += plantilla;
     }
     }).catch(console.error);
@@ -83,12 +83,12 @@ let cargarDatos=() => {
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
-                            <img src="${imagen}">
+                        <div id="jupiter" class="bg-secondary text-center rounded p-4">
+                            <img class="animate__animated animate__heartBeat" src="${imagen}">
                         </div>
                     </div>
                     <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
+                        <div id="jupiter" class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Salse & Revenue</h6>
                                 <a href="">Show All</a>
