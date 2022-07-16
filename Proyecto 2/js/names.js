@@ -36,6 +36,13 @@ let cargarDatos=() => {
 
                 document.getElementById('proyecto').innerHTML = "";
 
+                if(aniofinalización === null){   
+                    aniofinalización="--";
+                }  
+
+                if(video === null){   
+                    video="https://www.youtube.com/embed/JOGp2c7-cKc";
+                }  
                plantilla=`
                <div class="container-fluid pt-4 px-4">
                     <div class="row g-4">
@@ -111,12 +118,6 @@ let cargarDatos=() => {
                 //gráficos
                 
                 plantilla2=`<table id="animations-example-3" class="charts-css bar data-spacing-4 show-labels show-data-on-hover show-primary-axis" style="height: 272px;">
-                    <caption>Years Compared</caption> 
-                    <thead>
-                    <tr>
-                        <th>Year</th> 
-                        <th>Progress</th>
-                    </tr></thead> 
                     <tbody>
                     <tr>
                         <th scope="row"> 2016 </th> 
@@ -158,13 +159,6 @@ let cargarDatos=() => {
 
 
                 plantilla3=`<table class="charts-css area hide-data show-labels show-primary-axis" style="height: 321px;">
-                <caption>Years Compared</caption>
-                <thead>
-                    <tr>
-                        <th>Year</th> 
-                        <th>Progress</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <tr>
                         <th scope="row"> 2016 </th> 
