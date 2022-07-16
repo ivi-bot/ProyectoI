@@ -6,6 +6,42 @@
     --dark: #000000;
 }
 
+#animations-example-3 {
+    height: 200px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #animations-example-3 tbody {
+    overflow-y: hidden; /* remove this to see how it works */
+  }
+  #animations-example-3 tbody th {
+    z-index: 1;
+  }
+  #animations-example-3 tbody td {
+    animation: moving-bars 4s linear infinite;
+  }
+  @keyframes moving-bars {
+    0%  { transform: translateY( 100% ); }
+    15% { transform: translateY( 0 ); }
+  }
+
+  #animations-example-3  td {
+    background-image: linear-gradient(
+      40deg,
+      #fffec9,	
+      #ffe875,	
+      #ffd59a,	
+      #ffb174,	
+      #ffb492,
+      #FF7514
+    );
+    animation: gradient-animation 3s linear infinite alternate;
+  }
+  @keyframes gradient-animation {
+    0%   { background-position:   0%; }
+    100% { background-position: 100%; }
+  }
+  
 .back-to-top {
     position: fixed;
     display: none;

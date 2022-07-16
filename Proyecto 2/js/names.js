@@ -29,6 +29,7 @@ let cargarDatos=() => {
                 aniofinalización=filtrado[0].aired.prop.to.year;
                 popularidad=filtrado[0].popularity;
                 tipo=filtrado[0].type;
+                video=filtrado[0].trailer.embed_url;
                 console.log(filtrado);
 
                 /*CORREGIR VALORES NULOOOOOOOOOOOOOOOOOOOS */
@@ -90,17 +91,123 @@ let cargarDatos=() => {
                     <div class="col-sm-12 col-xl-6">
                         <div id="jupiter" class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Salse & Revenue</h6>
-                                <a href="">Show All</a>
+                                <h6 class="mb-0">Datos</h6>
                             </div>
-                            <canvas id="salse-revenue"></canvas>
+                            <div id="salse-revenue"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div id="jupiter" class="bg-secondary text-center rounded p-4">
+                            <div><iframe width="540" height="315" src="${video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div id="jupiter" class="bg-secondary text-center rounded p-4">
+                            <div id="general"></div>
                         </div>
                     </div>
                 </div>
             </div>`;
+                //gráficos
+                
+                plantilla2=`<table id="animations-example-3" class="charts-css bar data-spacing-4 show-labels show-data-on-hover show-primary-axis" style="height: 272px;">
+                    <caption>Years Compared</caption> 
+                    <thead>
+                    <tr>
+                        <th>Year</th> 
+                        <th>Progress</th>
+                    </tr></thead> 
+                    <tbody>
+                    <tr>
+                        <th scope="row"> 2016 </th> 
+                        <td style="--size:0.2;">
+                            <span class="data">20</span> 
+                            <span class="tooltip">data: 20<br>more info</span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row"> 2017 </th> 
+                            <td style="--size:0.4;">
+                            <span class="data">40</span> 
+                            <span class="tooltip">data: 40<br>more info</span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row"> 2018 </th>
+                        <td style="--size:0.6;">
+                            <span class="data">60</span>
+                            <span class="tooltip">data: 60<br>more info</span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row"> 2019 </th>
+                        <td style="--size:0.8;">
+                            <span class="data">80</span> 
+                            <span class="tooltip">data: 80<br>more info</span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row"> 2020 </th> 
+                        <td style="--size:1;">
+                            <span class="data">100</span> 
+                            <span class="tooltip">data: 100<br>more info</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>`;
+
+
+                plantilla3=`<table class="charts-css area hide-data show-labels show-primary-axis" style="height: 321px;">
+                <caption>Years Compared</caption>
+                <thead>
+                    <tr>
+                        <th>Year</th> 
+                        <th>Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"> 2016 </th> 
+                        <td style="--start:0.2; --size:0.4;">
+                            <span class="data"> 40% </span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row"> 2017 </th> 
+                        <td style="--start:0.4; --size:0.8;">
+                            <span class="data"> 80% </span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row"> 2018 </th> 
+                        <td style="--start:0.8; --size:0.6;">
+                            <span class="data"> 60% </span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row"> 2019 </th> 
+                        <td style="--start:0.6; --size:1;">
+                            <span class="data"> 100% </span>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <th scope="row"> 2020 </th> 
+                        <td style="--start:1; --size:0.3;">
+                            <span class="data"> 30% </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>`;
+
 
                document.getElementById('proyecto').innerHTML += plantilla;
 
+               document.getElementById('salse-revenue').innerHTML += plantilla2;
+
+               document.getElementById('general').innerHTML += plantilla3;
+
+            
+            
             }).catch(console.error);
     
     });
