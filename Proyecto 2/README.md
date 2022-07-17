@@ -1,23 +1,30 @@
-## Proyecto1  
+## Proyecto 2  
 
-En este proyecto se puede visualizar la implementación de html y css, es un diseño de una sola página con diferentes opciones que el usuario puede realizar al visitarlo.  
+Este proyecto es realizado con la finalidad de diseñar e implementar una página web interactiva y adaptable que utilice las tecnologías disponibles del lado del cliente.  
+# API: https://api.jikan.moe/v4/anime?q=haikyuu&sfw  
+
+# Plantilla Bootstrap usada: https://themewagon.com/themes/free-bootstrap-5-admin-dashboard-template-darkpan/  
+
+# Librerias:  
+
+CSS:  
+
+https://animate.style/  
+
+https://github.com/evankarageorgos/hue  
+
+Charts:  
+
+https://chartscss.org/  
 
 
 
-Sitio web abierto en un computador:  
+Sitio web abierto desde el inicio:  
 
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen1WS.png) 
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen2WS.png)
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen3ws.png)
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen4WS.png)
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen6WS.png)  
-
-Sitio web abierto en un computador que solo ocupa la mitad de la pantalla:  
-
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen1MWS.png)  
+Barra de elección cargada dinámicamente:  
 
 
-Comportamiento del sitio web abierto en dispositivos más pequeños que 320px de ancho, luego se corrigió para tener el mismo comportamiento para dispositivos más pequeños que 375px de ancho:  
 
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen1M.png)
-![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto1/readmeassets/Imagen2M.png)
+Sitio web al elegir una opción de la barra de elección:  
+
+
