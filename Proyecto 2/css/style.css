@@ -28,12 +28,12 @@
   #animations-example-3  td {
     background-image: linear-gradient(
       40deg,
-      #fffec9,	
-      #ffe875,	
-      #ffd59a,	
-      #ffb174,	
+      #FF7514,
       #ffb492,
-      #FF7514
+      #ffb174,	
+      #ffd59a,	
+      #ffe875,
+      #fffec9
     );
     animation: gradient-animation 3s linear infinite alternate;
   }
@@ -50,7 +50,48 @@
     z-index: 99;
 }
 
+#column-example-8 {
+    height: 200px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #column-example-8 tbody {
+    overflow-y: hidden; /* remove this to see how it works */
+  }
+  #column-example-8 tbody th {
+    z-index: 1;
+  }
+  #column-example-8 tbody td {
+    animation: moving-bars 4s linear infinite;
+  }
+  @keyframes moving-bars {
+    0%  { transform: translateY( 100% ); }
+    15% { transform: translateY( 0 ); }
+  }
 
+  #column-example-8  td {
+    background-image: linear-gradient(
+      40deg,
+      #fffec9,	
+      #ffe875,	
+      #ffd59a,	
+      #ffb174,	
+      #ffb492,
+      #FF7514
+    );
+    animation: gradient-animation 3s linear infinite alternate;
+  }
+  @keyframes gradient-animation {
+    0%   { background-position:   0%; }
+    100% { background-position: 100%; }
+  }
+
+#column-example-8 {
+    height: 350px;
+    max-width: 570px;
+    margin: 0 auto;
+    --labels-size: 3rem;
+  }
 /*** Spinner ***/
 #spinner {
     opacity: 0;

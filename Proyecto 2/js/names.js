@@ -32,7 +32,6 @@ let cargarDatos=() => {
                 video=filtrado[0].trailer.embed_url;
                 console.log(filtrado);
 
-                /*CORREGIR VALORES NULOOOOOOOOOOOOOOOOOOOS */
 
                 document.getElementById('proyecto').innerHTML = "";
 
@@ -43,6 +42,11 @@ let cargarDatos=() => {
                 if(video === null){   
                     video="https://www.youtube.com/embed/JOGp2c7-cKc";
                 }  
+
+                //valores de los gráficos
+                favoritos=filtrado[0].favorites;
+                ranking=filtrado[0].rank;
+                publico=filtrado[0].scored_by;
                plantilla=`
                <div class="container-fluid pt-4 px-4">
                     <div class="row g-4">
@@ -83,11 +87,7 @@ let cargarDatos=() => {
                             </div>
                         </div>
                     </div>
-                </div>
-           
-           
-           
-           
+                </div>   
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-12 col-xl-6">
@@ -110,90 +110,66 @@ let cargarDatos=() => {
                     </div>
                     <div class="col-sm-12 col-xl-6">
                         <div id="jupiter" class="bg-secondary text-center rounded p-4">
-                            <div id="general"></div>
+                            <h6 class="mb-0">Calificación</h6>
                         </div>
+                        <div id="general"></div>
                     </div>
                 </div>
             </div>`;
                 //gráficos
-                
+                valor_grafico1=favoritos/100000;
+                valor_grafico2=popularidad/10000;
+                valor_grafico3=ranking/10000;
+                valor_grafico4=publico/10000000;
+
                 plantilla2=`<table id="animations-example-3" class="charts-css bar data-spacing-4 show-labels show-data-on-hover show-primary-axis" style="height: 272px;">
                     <tbody>
                     <tr>
-                        <th scope="row"> 2016 </th> 
-                        <td style="--size:0.2;">
-                            <span class="data">20</span> 
-                            <span class="tooltip">data: 20<br>more info</span>
+                        <th scope="row"> Favoritos </th> 
+                        <td style="--size:${valor_grafico1};">
+                            <span class="tooltip">data: ${favoritos}<br>more info</span>
                         </td>
                     </tr> 
                     <tr>
-                        <th scope="row"> 2017 </th> 
-                            <td style="--size:0.4;">
-                            <span class="data">40</span> 
-                            <span class="tooltip">data: 40<br>more info</span>
+                        <th scope="row"> Fama </th> 
+                            <td style="--size:${valor_grafico2};">
+                            <span class="tooltip">data: ${popularidad}<br>more info</span>
                         </td>
                     </tr> 
                     <tr>
-                        <th scope="row"> 2018 </th>
-                        <td style="--size:0.6;">
-                            <span class="data">60</span>
-                            <span class="tooltip">data: 60<br>more info</span>
+                        <th scope="row"> Ranking </th>
+                        <td style="--size:${valor_grafico3};">
+                            <span class="tooltip">data: ${ranking}<br>more info</span>
                         </td>
                     </tr> 
                     <tr>
-                        <th scope="row"> 2019 </th>
-                        <td style="--size:0.8;">
-                            <span class="data">80</span> 
-                            <span class="tooltip">data: 80<br>more info</span>
+                        <th scope="row"> Público </th>
+                        <td style="--size:${valor_grafico4};">
+                            <span class="tooltip">data: ${publico}<br>more info</span>
                         </td>
                     </tr> 
-                    <tr>
-                        <th scope="row"> 2020 </th> 
-                        <td style="--size:1;">
-                            <span class="data">100</span> 
-                            <span class="tooltip">data: 100<br>more info</span>
-                        </td>
-                    </tr>
                     </tbody>
                 </table>`;
 
 
-                plantilla3=`<table class="charts-css area hide-data show-labels show-primary-axis" style="height: 321px;">
-                <tbody>
-                    <tr>
-                        <th scope="row"> 2016 </th> 
-                        <td style="--start:0.2; --size:0.4;">
-                            <span class="data"> 40% </span>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <th scope="row"> 2017 </th> 
-                        <td style="--start:0.4; --size:0.8;">
-                            <span class="data"> 80% </span>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <th scope="row"> 2018 </th> 
-                        <td style="--start:0.8; --size:0.6;">
-                            <span class="data"> 60% </span>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <th scope="row"> 2019 </th> 
-                        <td style="--start:0.6; --size:1;">
-                            <span class="data"> 100% </span>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <th scope="row"> 2020 </th> 
-                        <td style="--start:1; --size:0.3;">
-                            <span class="data"> 30% </span>
-                        </td>
-                    </tr>
+                plantilla3=`<table id="column-example-8" class="charts-css show-data-on-hover column show-labels data-spacing-4">
+                <tbody>`;
+                start=0.066;
+                for(let valores of dataFrases.data){
+                titulo="";
+                if(filtrado[0].mal_id ==valores.mal_id){
+                    titulo=" ⭐\n"+valores.score;}
+                size=valores.score/10;
+                plantilla3+=`
+                <tr>
+                    <th scope="row"> ${titulo} </th>
+                    <td style="--size:${size};">
+                    </td>
+                  </tr>`;     
+                }
+                plantilla3+=`
                 </tbody>
-            </table>`;
-
-
+                </table>`;
                document.getElementById('proyecto').innerHTML += plantilla;
 
                document.getElementById('salse-revenue').innerHTML += plantilla2;
