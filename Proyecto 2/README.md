@@ -29,5 +29,6 @@ Barra de elección cargada dinámicamente:
 
 
 Sitio web al elegir una opción de la barra de elección:  
+![Image text](https://github.com/ivi-bot/ProyectoI/blob/main/Proyecto%202/img/dynamicweb.png)
 
 
