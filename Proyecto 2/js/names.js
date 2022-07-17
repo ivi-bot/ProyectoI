@@ -105,7 +105,7 @@ let cargarDatos=() => {
                     </div>
                     <div class="col-sm-12 col-xl-6">
                         <div id="jupiter" class="bg-secondary text-center rounded p-4">
-                            <div><iframe width="540" height="315" src="${video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            <div><iframe width="400" height="315" src="${video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-xl-6">
