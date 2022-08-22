@@ -1,0 +1,95 @@
+img {
+    border-radius: 10%;
+}
+
+.toggle {
+    background: #80FFE8;
+    padding: 5% 7% 5%;
+    width: 100%;
+}
+
+.toggle-group {
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+#footer {
+
+    padding-top: 20%;
+}
+
+#icon2e {
+    background: #80F7FF;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, #83BCFF, #80F7FF);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #83BCFF, #80F7FF);
+}
+
+#info{
+    background: #667eea;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, #FDD692, #FDBC92);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #FDD692, #FDBC92);
+    border-radius: 20px;
+    padding: 5% 5% 5%;
+    width: 100%;
+    padding-bottom: 40%;
+
+}
+
+#buscar{
+    background: #65524D;
+}
+
+#select{
+    background: #80F7FF;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, #83BCFF, #80F7FF);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #83BCFF, #80F7FF);
+    border-radius: 20px;
+    height: 59px;
+    width: 100%;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 20px;
+  }
+
+#iconx, #icony{
+    height: 4rem;
+    width: 4rem;
+}
+
+.filtype{
+  width: 60%;
+  
+}
+.filclass{
+    background: #80F7FF;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, #83BCFF, #80F7FF);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #83BCFF, #80F7FF);
+}
+
+#contendor{
+    padding-left: 30%;
+    padding-bottom: 10%;
+}
+mat-radio-group{
+    padding-left:15%;
+    padding-bottom: 80%;
+}
+
+h4{
+    padding-top: 10%;
+}

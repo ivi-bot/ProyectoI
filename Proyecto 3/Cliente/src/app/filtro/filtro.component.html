@@ -1,0 +1,74 @@
+<section class="intro">
+    <div class="mask d-flex align-items-center h-100" style="background-color: rgba(255,255,255,.6);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card gradient-custom" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-white">
+                            <div class="my-md-5">
+                                <div>
+
+                                    <div id="info" class="pt-4 align-items-center">
+                                        <mat-form-field id="select" appearance="fill">
+                                            <mat-label>Ciudad</mat-label>
+                                            <mat-select>
+                                
+                                                 <mat-option *ngFor="let ciudad of ciudad" [value]="ciudad.value">
+                                              {{ciudad.viewValue}}
+                                            </mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                        <h4>Tipo</h4>
+
+                                        <div id="contendor">
+                                            <mat-button-toggle-group class="filtype" name="nav" aria-label="nav">
+                                                <mat-button-toggle class="filclass" value="filtro">
+                                                    <img id="iconx" class="img-fluid" src="./assets/icons/bxs-dog.svg">
+                                                </mat-button-toggle>
+                                                <mat-button-toggle class="filclass" value="check">
+                                                    <img id="icony" class="img-fluid" src="./assets/icons/bxs-cat.svg">
+                                                </mat-button-toggle>
+                                            </mat-button-toggle-group>
+
+
+                                        </div>
+
+
+                                        <!-- Force next columns to break to new line -->
+                                        <div class="w-100"></div>
+
+                                        <mat-radio-group aria-label="Select an option">
+                                            <mat-radio-button value="1">Hembra</mat-radio-button>
+                                            <mat-radio-button value="2">Macho</mat-radio-button>
+                                        </mat-radio-group>
+
+                                    </div>
+
+                                </div>
+                                <div class="text-center py-5">
+                                    <button id="buscar" class="btn btn-light btn-lg btn-rounded px-5" type="submit"
+                                        routerLink="/validate">Buscar</button>
+                                </div>
+                                <div id="footer">
+                                    <mat-button-toggle-group class="toggle-group" name="nav" aria-label="nav">
+                                        <mat-button-toggle id="icon2e"  class="toggle" value="filtro" routerLink="/filtro">
+                                            <img id="icon1e" src="./assets/icons/bx-donate-heart.svg">
+                                        </mat-button-toggle>
+                                        <mat-button-toggle class="toggle" value="check" routerLink="/principal">
+                                            <img src="./assets/icons/bx-list-check.svg">
+                                        </mat-button-toggle>
+                                        <mat-button-toggle class="toggle"value="adoptante"
+                                            routerLink="/adoptante">
+                                            <img id="icon3e" src="./assets/icons/bxs-user.svg">
+                                        </mat-button-toggle>
+                                    </mat-button-toggle-group>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
