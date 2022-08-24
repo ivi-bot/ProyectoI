@@ -59,7 +59,7 @@ router.get('/adoptante', function(req, res, next) {
 
 });
 
-router.get('/fundacion', function(req, res, next) {  
+router.get('/fundaciones', function(req, res, next) {  
   
   models.fundacion.findAll({
     include: [{ 
@@ -71,6 +71,43 @@ router.get('/fundacion', function(req, res, next) {
     res.json(fundaciones)
  })
  .catch(error => res.status(400).send(error))
+});
+
+//fundaciones por id
+router.get('/fundacion/:id/', function(req, res, next) {  
+  let id_fund=req.params.id;
+  
+  models.fundacion.findAll({
+    include: [{ 
+      model: models.usuario,
+      as: 'tipo_usuario'
+    }],
+    where:{
+      idfundacion:id_fund
+    }
+  })
+ .then(fundaciones => {
+    res.json(fundaciones)
+ })
+ .catch(error => res.status(400).send(error))
+});
+
+//informacion de usuario fundacion
+
+router.get('/fundacion', function(req, res, next) {  
+ 
+  models.usuario.findAll({
+    include: [{ 
+       model: models.fundacion,
+       as: 'fundacions'
+    }], where:{
+      cargo:"fundación"
+    }
+ })
+.then(fundacion => {
+   res.json(fundacion)
+})
+.catch(error => res.status(400).send(error))
 });
 
 router.get('/mascota/:id/', function(req, res, next) {  

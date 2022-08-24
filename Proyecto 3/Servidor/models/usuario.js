@@ -32,6 +32,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(45),
       allowNull: true
     },
+    cargo: {
+      type: DataTypes.STRING(45),
+      allowNull: false
+    },
     foto: {
       type: DataTypes.STRING(300),
       allowNull: true

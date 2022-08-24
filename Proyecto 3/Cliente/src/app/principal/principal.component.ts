@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RecursoFundacionesService } from '../servicios/recurso-fundaciones.service';
+import { Fundaciones } from '../interfaz/fundaciones';
 
 @Component({
   selector: 'app-principal',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor() { }
-
+  fundaciones:any=[];
+  constructor(private RecursoFundacionesService: RecursoFundacionesService) {
+  }
   ngOnInit(): void {
+    this.RecursoFundacionesService.getAll().subscribe(data =>{
+      this.fundaciones=data;
+    })
   }
 
 }

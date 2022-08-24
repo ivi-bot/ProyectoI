@@ -34,6 +34,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import { SplashComponent } from './splash/splash.component';
 import { MascotasAdoptanteComponent } from './mascotas-adoptante/mascotas-adoptante.component';
 import { InformacionmascotaComponent } from './informacionmascota/informacionmascota.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { InformacionmascotaComponent } from './informacionmascota/informacionmas
     MatFormFieldModule,
     MatSelectModule,
     MatButtonToggleModule,
-    MatRadioModule
+    MatRadioModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

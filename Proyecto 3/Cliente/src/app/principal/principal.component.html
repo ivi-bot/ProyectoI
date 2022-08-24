@@ -13,18 +13,9 @@
                         <img class="img-fluid" id="im" src="./assets/imagenes/picsea-EScCHx_ZR8Y-unsplash.jpg">
                     </div>
                     <h2 id="fundaciones">Nuestras fundaciones</h2>
-                    <mat-grid-list cols="2" rowHeight="2:2">
-                        <mat-grid-tile>
-                            <img class="img-fluid" id="img1e"  src="./assets/imagenes/hidayat-abisena-JsDlJ3hZyf8-unsplash.jpg">
-                        </mat-grid-tile>
-                        <mat-grid-tile>
-                            <img class="img-fluid" id="img2e" src="./assets/imagenes/jana-shnipelson-KnzXzvRqTFE-unsplash.jpg">
-                        </mat-grid-tile>
-                        <mat-grid-tile>
-                            <img class="img-fluid" id="img3e" src="./assets/imagenes/cynthia-smith-vDs0MCYkfQ4-unsplash.jpg">
-                        </mat-grid-tile>
-                        <mat-grid-tile>
-                            <img class="img-fluid" id="img4e" src="./assets/imagenes/sasha-sashina-Xcscr_sNSEY-unsplash.jpg">
+                    <mat-grid-list cols="2" rowHeight="1:1">
+                        <mat-grid-tile *ngFor="let info of fundaciones">
+                            <img class="img-fluid" src="./assets/imagenes/{{info.foto}}">
                         </mat-grid-tile>
                     </mat-grid-list>
                     <div id="footer">
