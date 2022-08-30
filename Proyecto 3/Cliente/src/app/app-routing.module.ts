@@ -21,11 +21,11 @@ const routes: Routes = [
     { path: "principal", component: PrincipalComponent },
     { path: "adoptante", component: AdoptanteComponent },
     { path: "filtro", component: FiltroComponent },
-    { path: "informacion", component: InformacionComponent },
+    { path: "informacion/:id/:id2", component: InformacionComponent },
     { path: "informacion-fundacion", component: InformacionFundacionComponent },
     { path: "principalfundacion", component: PrincipalfundacionComponent },
     { path: "splash", component: SplashComponent },
-    {path:"mascotasadoptante",component:MascotasAdoptanteComponent},
+    {path:"mascotasadoptante/:id",component:MascotasAdoptanteComponent},
     {path:"informacionmascota",component:InformacionmascotaComponent},
 
     { path: "**", redirectTo: "splash" }

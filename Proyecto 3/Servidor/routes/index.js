@@ -59,6 +59,26 @@ router.get('/adoptante', function(req, res, next) {
 
 });
 
+router.get('/adoptante/:id/', function(req, res, next) {  
+  let id_Adop=req.params.id;
+  models.usuario.findAll({
+    include: [{ 
+      model: models.adoptante,
+      as: 'adoptantes'
+    }],
+    where:{
+      cargo:"adoptante",
+      idUsuario:id_Adop
+    }
+  })
+ .then(fundaciones => {
+    res.json(fundaciones)
+ })
+ .catch(error => res.status(400).send(error))
+});
+
+
+
 router.get('/fundaciones', function(req, res, next) {  
   
   models.fundacion.findAll({
@@ -127,4 +147,23 @@ router.get('/mascota/:id/', function(req, res, next) {
  .catch(error => res.status(400).send(error))
 });
 
+
+router.get('/mascota/:id/:id2', function(req, res, next) {  
+  let id_user=req.params.id;
+  let id_mascota=req.params.id2;
+  models.mascota.findAll({
+    include: [{ 
+      model: models.adoptante,
+      as: 'duenio_adoptante'
+    }],
+    where:{
+      duenio:id_user,
+      idmascota:id_mascota
+    }
+  })
+ .then(mascotas => {
+    res.json(mascotas)
+ })
+ .catch(error => res.status(400).send(error))
+});
 module.exports = router;

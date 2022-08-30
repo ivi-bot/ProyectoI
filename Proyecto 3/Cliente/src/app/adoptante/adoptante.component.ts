@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { RecursomascotaUsuarioService } from '../servicios/recursomascota-usuario.service';
+import { AdoptanteService } from '../servicios/adoptante.service';
 import { Fundaciones } from '../interfaz/fundaciones';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-adoptante',
@@ -9,6 +10,23 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./adoptante.component.css']
 })
 export class AdoptanteComponent implements OnInit {
+  adoptante:any;
+  constructor(private adoptantes:AdoptanteService,private ruta:Router) { }
+
+  ngOnInit(): void {
+    this.adoptantes.getAll().subscribe(data =>{
+      this.adoptante=data;
+      console.log(data)
+    })
+  }
+
+  goToMismascotas(id:String){
+    this.ruta.navigate(['/mascotasadoptante',id])
+
+  }
+
+
+  /*
 
   constructor(private RecursomascotaUsuarioService: RecursomascotaUsuarioService,private ruta:Router) {}
 
@@ -17,6 +35,6 @@ export class AdoptanteComponent implements OnInit {
   goToMismascotas(){
     this.ruta.navigate(['/mascotasadoptante'])
 
-  }
+  }*/
 
 }

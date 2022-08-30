@@ -7,41 +7,20 @@
                         <div class="card-body p-5 text-white">
                             <div class="my-md-5">
                                 <div>
-                                    <h2 id="buscar">¡Bienvenido ##!</h2>
-                                    <div id="perfil">
-                                        <img class="img-fluid" id="im"
-                                            src="./assets/imagenes/joel-mott-LaK153ghdig-unsplash.jpg">
-                                    </div>
                                     <div id="tusmascotas">
                                         <h5 id="mascotas">Tus mascotas</h5>
                                     </div>
-                                    <div *ngFor="let info of mascota">
+                                    <div class="pt-4" *ngFor="let info of mascota">
                                         <div class="bg-image card shadow-1-strong"
-                                        style="background-image:  url('./assets/imagenes/{{mascota.foto}}');"></div>
-                                    </div>
-                                    <div class="pt-4">
-                                        <div class="bg-image card shadow-1-strong"
-                                            style="background-image:  url('./assets/imagenes/justin-veenema-NH1d0xX6Ldk-unsplash.jpg');">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Nina</h5>
-                                                <p class="card-text">
-                                                    325 días
-                                                </p>
-                                                <a class="btn btn-outline-light" routerLink="/informacion" >Ver</a>
-                                            </div>
+                                        style="background-image:  url('./assets/imagenes/{{info.foto}}');">
+                                        <div class="card-body text-white">
+                                            <h5 class="card-title">{{info.apodo}}</h5>
+                                            <p class="card-text">
+                                                325 días
+                                            </p>
+                                            <a (click)="goToinformacion(info.idmascota)" class="btn btn-outline-light" routerLink="/informacion" >Ver</a>
                                         </div>
-                                    </div>
-                                    <div class="pt-4">
-                                        <div class="bg-image card shadow-1-strong"
-                                            style="background-image:  url('./assets/imagenes/cristian-castillo-73pyV0JJOmE-unsplash.jpg');">
-                                            <div class="card-body text-white">
-                                                <h5 class="card-title">Croqueta</h5>
-                                                <p class="card-text">
-                                                    88 días
-                                                </p>
-                                                <a href="#!" class="btn btn-outline-light">Ver</a>
-                                            </div>
-                                        </div>
+                                         </div>
                                     </div>
                                 </div>
 
