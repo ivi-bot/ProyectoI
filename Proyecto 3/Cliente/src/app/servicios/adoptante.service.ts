@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AdoptanteService {
-
+//INFORMACION DEL USUARIO
   constructor(private http: HttpClient) { }
   //cambiar comportamiento
   getAll():Observable<any>{

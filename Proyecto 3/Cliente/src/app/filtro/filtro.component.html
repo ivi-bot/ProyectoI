@@ -7,14 +7,12 @@
                         <div class="card-body p-5 text-white">
                             <div class="my-md-5">
                                 <div>
-
                                     <div id="info" class="pt-4 align-items-center">
                                         <mat-form-field id="select" appearance="fill">
-                                            <mat-label>Ciudad</mat-label>
-                                            <mat-select>
-                                
-                                                 <mat-option *ngFor="let ciudad of ciudad" [value]="ciudad.value">
-                                              {{ciudad.viewValue}}
+                                            <mat-label>Seleccione una ciudad</mat-label>
+                                            <mat-select  [(value)]="selectedProfile" (selectionChange)="buscarMascota($event)">
+                                                 <mat-option *ngFor="let ciudad of ciudades" [value]="ciudad">
+                                              {{ciudad.tipo_usuario.direccion}}
                                             </mat-option>
                                             </mat-select>
                                         </mat-form-field>

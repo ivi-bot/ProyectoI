@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class InformacionService {
-
+//AQUI ESE UNO SIGNIFICA EL USUARIO, SI QUIERO CAMBIAR PUES ES AQUÍ
   
   constructor(private http: HttpClient) { }
   //cambiar comportamiento

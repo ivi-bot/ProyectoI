@@ -25,16 +25,4 @@ export class AdoptanteComponent implements OnInit {
 
   }
 
-
-  /*
-
-  constructor(private RecursomascotaUsuarioService: RecursomascotaUsuarioService,private ruta:Router) {}
-
-  ngOnInit(): void {
-  } 
-  goToMismascotas(){
-    this.ruta.navigate(['/mascotasadoptante'])
-
-  }*/
-
 }
