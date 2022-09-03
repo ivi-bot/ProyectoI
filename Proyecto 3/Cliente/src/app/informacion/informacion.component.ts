@@ -8,7 +8,7 @@ import { InformacionService } from '../servicios/informacion.service';
   styleUrls: ['./informacion.component.css']
 })
 export class InformacionComponent implements OnInit {
-  infomascota:any;
+  infomascota:any = []
   id:string ="";
   constructor(private informacion:InformacionService,private rutaActiva:ActivatedRoute) { }
 
@@ -17,9 +17,11 @@ export class InformacionComponent implements OnInit {
       this.id=params['id2'];
     })
 
-    this.informacion.getOne(this.id).subscribe(data =>{
-      this.infomascota=data
-      console.log(data)
+    this.informacion.getOneUser(this.id).subscribe(data =>{
+      this.infomascota=Object.values(data)    
     })
+
+    
   }
+  
 }

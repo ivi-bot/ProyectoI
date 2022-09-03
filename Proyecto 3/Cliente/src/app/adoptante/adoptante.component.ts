@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AdoptanteService } from '../servicios/adoptante.service';
-import { Fundaciones } from '../interfaz/fundaciones';
 import { Router } from '@angular/router';
 
 

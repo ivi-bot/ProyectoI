@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { RecursoFundacionesService } from '../servicios/recurso-fundaciones.service';
-import { Fundaciones } from '../interfaz/fundaciones';
 
 @Component({
   selector: 'app-principal',

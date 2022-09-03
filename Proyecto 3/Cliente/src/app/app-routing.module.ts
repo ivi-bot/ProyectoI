@@ -8,7 +8,6 @@ import { ValidateComponent } from './validate/validate.component';
 import { AdoptanteComponent } from './adoptante/adoptante.component';
 import { FiltroComponent } from './filtro/filtro.component';
 import { InformacionComponent } from './informacion/informacion.component';
-import { InformacionFundacionComponent } from './informacion-fundacion/informacion-fundacion.component';
 import { PrincipalfundacionComponent } from './principalfundacion/principalfundacion.component';
 import { SplashComponent } from './splash/splash.component';
 import { MascotasAdoptanteComponent } from './mascotas-adoptante/mascotas-adoptante.component';
@@ -17,12 +16,11 @@ import { InformacionmascotaComponent } from './informacionmascota/informacionmas
 
 const routes: Routes = [
     { path: "login", component: LoginComponent },
-    { path: "validate", component: ValidateComponent },
+    { path: "validate/:id", component: ValidateComponent },
     { path: "principal", component: PrincipalComponent },
     { path: "adoptante", component: AdoptanteComponent },
     { path: "filtro", component: FiltroComponent },
     { path: "informacion/:id/:id2", component: InformacionComponent },
-    { path: "informacion-fundacion", component: InformacionFundacionComponent },
     { path: "principalfundacion", component: PrincipalfundacionComponent },
     { path: "splash", component: SplashComponent },
     {path:"mascotasadoptante/:id",component:MascotasAdoptanteComponent},

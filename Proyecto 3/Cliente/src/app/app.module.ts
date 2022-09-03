@@ -9,7 +9,6 @@ import { ValidateComponent } from './validate/validate.component';
 import { AdoptanteComponent } from './adoptante/adoptante.component';
 import { FiltroComponent } from './filtro/filtro.component';
 import { InformacionComponent } from './informacion/informacion.component';
-import { InformacionFundacionComponent } from './informacion-fundacion/informacion-fundacion.component';
 import { PrincipalfundacionComponent } from './principalfundacion/principalfundacion.component';
 
 
@@ -45,7 +44,6 @@ import { HttpClientModule } from '@angular/common/http';
     AdoptanteComponent,
     FiltroComponent,
     InformacionComponent,
-    InformacionFundacionComponent,
     PrincipalfundacionComponent,
     SplashComponent,
     MascotasAdoptanteComponent,

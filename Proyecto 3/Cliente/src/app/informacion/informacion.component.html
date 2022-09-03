@@ -9,12 +9,12 @@
                                 <div>
                                     <div id="info" class="pt-4 align-items-center"  *ngFor="let info of infomascota">
                                         <img id="icon1e" class="img-fluid"
-                                            src='./assets/imagenes/{{info.foto}}'>
+                                            src='{{info.imagen}}'>
                                         <h3>{{info.apodo}}</h3>
                                         <p class="card-text">
                                             {{info.genero}}<br>
-                                            {{info.raza}}<br>
-                                            {{info.createdAt}}<br>
+                                            {{info.tipo}}<br>
+                                            {{info.fechaCita}}<br>
                                          
                                         </p>
                                     </div>
