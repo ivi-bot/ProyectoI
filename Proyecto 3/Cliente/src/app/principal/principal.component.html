@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 <section class="intro">
     <div class="mask d-flex align-items-center h-100" style="background-color: rgba(255,255,255,.6);">
       <div class="container">
@@ -8,14 +18,58 @@
                 <div class="my-md-5">
                   <div>
                     <h2 id="buscar" class="pb-4">Busca</h2>
-                    <div id="imgcenter" class="text-center">
+
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="./assets/imagenes/picsea-EScCHx_ZR8Y-unsplash.jpg" class="d-block w-100 opacity" alt="foto1">
+                          <div class="carousel-caption d-md-block">
+                            <h3>Noticias del día</h3>
+                            <h5>Beneficios de críar a tus hijos con mascotas</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="./assets/imagenes/olia-nayda-f6v_Q0WXEK8-unsplash.jpg" class="d-block w-100 opacity" alt="foto2">
+                          <div class="carousel-caption d-md-block">
+                            <h3>Actualizaciones</h3>
+                            <h5>Nuevo refugio localizado en Daule.</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/imagenes/hidayat-abisena-JsDlJ3hZyf8-1.jpg" class="d-block w-100 opacity" alt="foto3">
+                          <div class="carousel-caption d-md-block">
+                            <h3>Tips</h3>
+                            <h5>Dieta recomendada para gatos</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+<!--
+                    <mat-card id="imgcenter" class="text-center">
                         <h4 class="text-left">Entérate de las nuevas actualizaciones</h4>
                         <img class="img-fluid" id="im" src="./assets/imagenes/picsea-EScCHx_ZR8Y-unsplash.jpg">
-                    </div>
+                  </mat-card>
+-->
+
                     <h2 id="fundaciones">Nuestras fundaciones</h2>
                     <mat-grid-list cols="2" rowHeight="1:1">
                         <mat-grid-tile *ngFor="let info of fundaciones">
-                            <img class="img-fluid" src="./assets/imagenes/{{info.foto}}">
+                            <img id="border" class="img-fluid" src="./assets/imagenes/{{info.foto}}">
+                            <div class="centrado"><h6>{{info.nickname}}</h6></div>
                         </mat-grid-tile>
                     </mat-grid-list>
                     <div id="footer">

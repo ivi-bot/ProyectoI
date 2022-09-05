@@ -18,8 +18,6 @@
                                             </mat-select>
                                         </mat-form-field>
                                         <div *ngIf="mostrar">
-                                            <h4>Tipo</h4>
-
                                             <mat-form-field id="select" appearance="fill">
                                                 <mat-label>Seleccione un tipo</mat-label>
                                                 <mat-select [(value)]="selectedProfile"
@@ -59,7 +57,7 @@
 
                                         <div *ngIf="mostrar3" class="test">
                                             <div class="pt-4" *ngFor="let info of mascotasFinal">
-                                                <div class="bg-image card shadow-1-strong"
+                                                <div class="bg-image card shadow-1-strong "
                                                     style="background-image:  url('{{info.imagen}}');">
                                                     <div class="card-body text-white">
                                                         <h5 class="card-title">{{info.apodo}}</h5>

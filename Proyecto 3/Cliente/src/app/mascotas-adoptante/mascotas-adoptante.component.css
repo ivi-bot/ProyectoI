@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Josefin+Sans&display=swap');
+
 #buscar {
     font-family: 'Inter';
     font-style: normal;
@@ -8,14 +10,8 @@
 }
 
 h4 {
-    padding: 5% 5% 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    color: #000000;
-
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
 }
 #im{
     border-radius: 100%;
@@ -73,4 +69,12 @@ mat-button-toggle-group {
     border-radius: 20px;
     padding: 5% 5% 5%;
     width: 100%;
+    text-align: center;
+}
+h5{
+    font-family: 'Dosis', sans-serif;
+}
+p{
+    font-family: 'Dosis', sans-serif;
+    text-shadow: black 0.1em 0.1em 0.8em
 }

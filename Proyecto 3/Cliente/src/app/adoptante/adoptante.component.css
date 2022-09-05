@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Josefin+Sans&display=swap');
+
 #buscar {
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     font-size: 40px;
     line-height:45px;
@@ -67,4 +68,8 @@ mat-button-toggle-group {
 }
 h3{
     color: black;
+    font-family: 'Cabin', sans-serif;
+}
+h5{
+    font-family: 'Dosis', sans-serif;
 }

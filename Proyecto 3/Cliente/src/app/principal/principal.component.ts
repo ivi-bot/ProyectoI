@@ -7,6 +7,7 @@ import { RecursoFundacionesService } from '../servicios/recurso-fundaciones.serv
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent implements OnInit {
+  slides: any[] = new Array(3).fill({id: -1, src: '', title: '', subtitle: ''});
 
   fundaciones:any=[];
   constructor(private RecursoFundacionesService: RecursoFundacionesService) {
@@ -15,6 +16,7 @@ export class PrincipalComponent implements OnInit {
     this.RecursoFundacionesService.getAll().subscribe(data =>{
       this.fundaciones=data;
     })
+    
   }
 
 }

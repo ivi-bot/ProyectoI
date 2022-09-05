@@ -9,13 +9,16 @@
                                 <div>
                                     <div id="info" class="pt-4 align-items-center" *ngFor="let info of infomascota">
                                         <img id="icon1e" class="img-fluid" src='{{info.imagen}}'>
-                                        <h3>{{info.apodo}}</h3>
-                                        <p class="card-text">
-                                            {{info.genero}}<br>
-                                            {{info.tipo}}<br>
-                                            {{info.fechaCita}}<br>
+                                        <h2>{{info.apodo}}</h2>
+                                            <h6>{{info.tipo}} {{info.genero}}</h6>
+                                            <h6> Refugio ubicado en {{info.ciudad}}</h6>
+                                            <h6>Encargado: {{info.responsable.firstName}} {{info.responsable.lastName}}</h6>
+                                            <h5>Condiciones para adoptar:</h5>
+                                            <div id="itemsc" *ngFor="let condicion of info.condicionesMascota">
+                                                <li type="circle"> <h6>{{condicion}}</h6></li>
 
-                                        </p>
+                                            </div>
+                                       
                                     </div>
                                     <div class="text-center py-5">
                                         <button class="btn btn-light btn-lg btn-rounded px-5" type="submit"

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Josefin+Sans&display=swap');
 img {
     border-radius: 10%;
 }
@@ -39,9 +40,28 @@ mat-button-toggle-group {
     border-radius: 20px;
     padding: 5% 5% 5%;
     width: 100%;
+    line-height: 20pt; 
 
 }
 
 button{
     background: #65524D;
+}
+
+h5{
+    color:#83BCFF
+}
+
+#itemsc{
+    padding-left: 10%;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+}
+
+h6{
+    font-family: 'Dosis', sans-serif;
+    text-shadow: #FDD692 0.1em 0.1em 0.2em
 }

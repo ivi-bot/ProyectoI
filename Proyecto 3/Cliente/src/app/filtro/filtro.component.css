@@ -40,8 +40,10 @@ img {
     padding: 5% 5% 5%;
     width: 100%;
     /*padding-bottom: 40%;*/
+    line-height: 20pt; 
 
 }
+
 
 #buscar{
     background: #65524D;
@@ -57,6 +59,8 @@ img {
     border-radius: 20px;
     height: 59px;
     width: 100%;
+    margin-bottom: 20px;
+
 }
 
 .mat-radio-button ~ .mat-radio-button {

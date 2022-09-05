@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Dosis&family=Josefin+Sans&display=swap');
+
 img {
     border-radius: 10%;
 }
@@ -39,7 +41,7 @@ mat-button-toggle-group {
     border-radius: 20px;
     padding: 5% 5% 5%;
     width: 100%;
-
+    line-height: 20pt; 
 }
 
 button{
