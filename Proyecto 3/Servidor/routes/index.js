@@ -13,15 +13,7 @@ router.get('/', function (req, res, next) {
 router.get('/mascotas', function (req, res, next) {
   res.render('mascotas', { title: 'Mascotas' });
 });
-/*
-router.get('/private', function (req, res, next) {
-  userconnection.findAll()
-    .then(productos => {
-      res.render('private', { title: 'My Dashboard :: Reporte', arrProductos: productos });
-    })
-    .catch(error => res.status(400).send(error))
-});
-*/
+
 router.get('/private', function (req, res, next) {
   userconnection.findAll()
     .then(user => {
